@@ -1,0 +1,11 @@
+{
+  "name": "lelex",
+  "version": "1.0.0",
+  "description": "A counter for Raiyan aka Lel Khan",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shawon Ashraf",
+  "license": "MIT"
+}
