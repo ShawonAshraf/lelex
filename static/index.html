@@ -21,11 +21,14 @@
   <p class="alert alert-info">Number of push and pulls : {{count}}</p>
   <p>
     <button type="button" class="btn btn-primary" @click="incCount()">Push/Pull just press it!</button>
-    <button type="button" class="btn btn-success" @click="count = 0">Done getting laid! RESET!</button>
+    <button type="button" class="btn btn-success" @click="clearCount()">Done getting laid! RESET!</button>
   </p>
 </div>
 
 <script>
+
+  alert('GG LEL! Start!');
+
   var app = new Vue({
     el: '#app',
     data: {
@@ -35,6 +38,14 @@
     methods: {
       incCount() {
         this.count++;
+      },
+      clearCount() {
+        if (this.count === 0) {
+          alert('Oi tor nani dibo re push pull?');
+        } else {
+          this.count = 0;
+          alert('Tor nani clear hoibo!');
+        }
       }
     }
   });
