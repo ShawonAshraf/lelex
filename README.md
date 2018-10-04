@@ -13,6 +13,9 @@
 }
 ```
 
+## Where to get it?
+Visit the [Releases](https://github.com/ShawonAshraf/lelex/releases) section of the repo.
+
 ## Building on your machine
 - Clone the repo
 - `cd` into the directory
