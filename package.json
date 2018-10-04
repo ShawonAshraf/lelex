@@ -4,11 +4,16 @@
   "description": "A counter for Raiyan aka Lel Khan",
   "main": "main.js",
   "scripts": {
+    "start": "./node_modules/.bin/electron .",
+    "eslint-init": "./node_modules/.bin/eslint --init",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Shawon Ashraf",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^3.0.2"
+    "electron": "^3.0.2",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
   }
 }
