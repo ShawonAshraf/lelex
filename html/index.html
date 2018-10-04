@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LELEX</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div class="container-fluid" id="app">
+  <h1 class="jumbotron jumbotron-fluid alert alert-primary">{{message}}</h1>
+  <p class="alert alert-info">Number of push and pulls : {{count}}</p>
+  <p>
+    <button type="button" class="btn btn-primary" @click="incCount()">Push/Pull just press it!</button>
+    <button type="button" class="btn btn-success" @click="count = 0">Done getting laid! RESET!</button>
+  </p>
+</div>
+
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Count your push and pulls LEL!',
+      count: 0
+    },
+    methods: {
+      incCount() {
+        this.count++;
+      }
+    }
+  });
+</script>
+</body>
+</html>
