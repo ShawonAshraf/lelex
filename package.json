@@ -6,6 +6,10 @@
   "scripts": {
     "start": "./node_modules/.bin/electron .",
     "watch": "./node_modules/.bin/electromon main.js",
+    "package-linux": "./node_modules/.bin/electron-packager . lelex --platform=linux --arch=x64 --app-version=1.0.0 --out=./binaries --overwrite --icon=./static/favicon.ico",
+    "package-darwin": "./node_modules/.bin/electron-packager . lelex --platform=darwin --arch=x64 --app-version=1.0.0 --out=./binaries --overwrite",
+    "package-win32": "./node_modules/.bin/electron-packager . lelex --platform=win32 --arch=x64 --app-version=1.0.0 --out=./binaries --overwrite --icon=./static/favicon.ico",
+    "package-all": "npm run package-linux && npm run package-darwin && npm run package-win32",
     "eslint-init": "./node_modules/.bin/eslint --init",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +18,7 @@
   "devDependencies": {
     "electromon": "^1.0.10",
     "electron": "^3.0.2",
+    "electron-packager": "^12.2.0",
     "eslint": "^5.6.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0"
